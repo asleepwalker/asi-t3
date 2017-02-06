@@ -12,6 +12,6 @@ app.get('/api/transactions/:since/:till', function(req, res) {
 	res.send(generator(req.params));
 });
 
-server.listen(3000, 'localhost');
+server.listen(process.env.PORT || 3000);
 server.on('listening', () => console.log('Server started at %s:%s',
 	server.address().address, server.address().port));
