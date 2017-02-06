@@ -6,7 +6,12 @@
 	</head>
 	<body>
 		<div class="container" ng-controller="graph">
-			<canvas
+			<h2>Transactions Graph</h2>
+			<div class="legend">
+				<span class="expense">Expense</span>
+				<span class="income">Income</span>
+			</div>
+			<canvas height="200"
 				class="chart chart-bar"
 				chart-data="data"
 				chart-labels="labels"

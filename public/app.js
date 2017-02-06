@@ -1,14 +1,6 @@
 angular.module('app', ['chart.js'])
 	.config(function (ChartJsProvider) {
 		ChartJsProvider.setOptions({
-			title: {
-				text: 'Transactions Graph',
-				display: true
-			},
-			legend: {
-				display: true,
-			},
-			maintainAspectRatio: false,
 			scales: {
 				xAxes: [{
 					gridLines: {

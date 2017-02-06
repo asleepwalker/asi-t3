@@ -11,13 +11,62 @@
 	box-sizing: inherit;
 }
 
+body {
+	background-color: #F2F2F2;
+}
+
 .container {
+	background-color: white;
+	border-color: #BFBFBF;
+	border-style: solid;
+	border-width: 1px 0;
 	box-sizing: border-box;
 	font-family: Helvetica, Arial, sans-serif;
-	height: 320px;
+	margin: 20px;
 	max-width: 400px;
 	padding: 15px;
 	width: 100%;
+}
+
+h2 {
+	color: #3498DB;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.legend {
+	margin-top: 6px;
+}
+
+.legend span {
+	color: #333;
+	font-size: 13px;
+	margin-left: 15px;
+}
+
+.legend span:first-child {
+	margin-left: 0;
+}
+
+.legend span:before {
+	content: '';
+	display: inline-block;
+	height: 16px;
+	margin-bottom: -3px;
+	margin-right: 3px;
+	width: 16px;
+}
+
+.legend span.expense:before {
+	background-color: #E53E2D;
+}
+
+.legend span.income:before {
+	background-color: #84BE46;
+}
+
+canvas {
+	margin-top: 3px;
 }
 
 .control {
