@@ -1,0 +1,87 @@
+* {
+	border: 0;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+.container {
+	box-sizing: border-box;
+	font-family: Helvetica, Arial, sans-serif;
+	height: 320px;
+	max-width: 400px;
+	padding: 15px;
+	width: 100%;
+}
+
+.control {
+	margin-top: 25px;
+}
+
+.control:after {
+	clear: both;
+	content: '';
+	display: block;
+}
+
+.control button,
+.control .indicator {
+	border: 1px solid #BFBFBF;
+	float: left;
+	height: 50px;
+}
+
+.control button {
+	background-color: white;
+	color: #C5BFBF;
+	cursor: pointer;
+	font-size: 18px;
+	transition: background-color .2s;
+	width: 38px;
+}
+
+.control button:hover {
+	background-color: #f5f5f5;
+}
+
+.control button[disabled],
+.control button[disabled]:hover {
+	background-color: white;
+	color: #e3e3e3;
+	cursor: default;
+}
+
+.control button.prev {
+	border-radius: 3px 0 0 3px;
+}
+
+.control button.next {
+	border-radius: 0 3px 3px 0;
+}
+
+.control .indicator {
+	border-width: 1px 0;
+	padding: 4px;
+	width: calc(100% - 76px);
+}
+
+.control span {
+	display: block;
+	font-size: 13px;
+	line-height: 21px;
+	text-align: center;
+}
+
+.control span.distance {
+	color: #333;
+}
+
+.control span.interval {
+	color: #BFBFBF;
+}

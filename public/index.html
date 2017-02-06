@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<title>asi-t3</title>
+		<link rel="stylesheet" type="text/css" href="app.css">
+	</head>
+	<body>
+		<div class="container" ng-controller="graph">
+			<canvas
+				class="chart chart-bar"
+				chart-data="data"
+				chart-labels="labels"
+				chart-series="['Expense', 'Income']">
+			</canvas>
+			<div class="control">
+				<button class="prev" ng-click="prevWeek()">&lt;</button>
+				<div class="indicator">
+					<span class="distance" ng-bind="getDistance()">This week</span>
+					<span class="interval" ng-bind="getInterval()">Jan 31-Feb 6, 2017</span>
+				</div>
+				<button class="next" ng-click="nextWeek()" ng-disabled="isCurrentWeek()">&gt;</button>
+			</div>
+		</div>
+		<script src="vendor/angular/angular.min.js"></script>
+		<script src="vendor/chart.js/dist/Chart.min.js"></script>
+		<script src="vendor/angular-chart.js/dist/angular-chart.min.js"></script>
+		<script src="vendor/moment/min/moment.min.js"></script>
+		<script src="app.js"></script>
+	</body>
+</html>
